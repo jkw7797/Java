@@ -1,4 +1,4 @@
-package exam.exchange.control;
+package exam.exchange;
 
 import java.util.Scanner;
 
