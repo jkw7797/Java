@@ -11,6 +11,7 @@ public class Exchange {
 			int money = scan.nextInt();
 			switch (money) {
 			case 0:
+				System.out.println("¤²¤²");
 				a=false;
 				break;
 			default:

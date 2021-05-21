@@ -12,10 +12,8 @@ public class TestPolymorphism {
 //		a1.eat();
 //		a2.eat();
 //		d2.eat();
-		
 		Animal animal = new Animal("동물이름");
 		System.out.println(animal);
-		
 	}
 }
 
@@ -43,11 +41,13 @@ class Animal extends Object {
 
 class Dog extends Animal {
 	public Dog() {
+		super("admin");
 		System.out.println("Dog");
 	}
 	
 	@Override
 	public void eat() {
+		
 		System.out.println("Dog eat Someting");
 		
 	}
@@ -56,6 +56,7 @@ class Dog extends Animal {
 
 class Cat extends Animal {
 	public Cat() {
+		super("admin");
 		System.out.println("Cat");
 	}
 }
