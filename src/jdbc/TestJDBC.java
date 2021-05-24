@@ -10,14 +10,14 @@ import java.sql.Statement;
 public class TestJDBC {
 	public static void main(String[] args) {
 		// 1. JDBC Driver 객체생성
-		try {
-			Class.forName("oracle.jdbc.OracleDriver");
-			System.out.println("Driver Loading 성공");
-
-		} catch (ClassNotFoundException exception) {
-			System.err.println("에러 메세지" + exception.getMessage());
-			exception.printStackTrace();
-		}
+//		try {
+//			Class.forName("oracle.jdbc.OracleDriver");
+//			System.out.println("Driver Loading 성공");
+//
+//		} catch (ClassNotFoundException exception) {
+//			System.err.println("에러 메세지" + exception.getMessage());
+//			exception.printStackTrace();
+//		}
 
 		// 2. connection 객체 생성
 		String url = "jdbc:oracle:thin:@localhost:1521:xe";
