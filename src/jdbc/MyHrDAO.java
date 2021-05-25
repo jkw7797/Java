@@ -15,6 +15,13 @@ public class MyHrDAO {
    public final String password = "hr";
 
    public MyHrDAO() {
+	   try {
+			Class.forName("oracle.jdbc.OracleDriver");
+			System.out.println("Driver Loading ¼º°ø");
+
+		} catch (ClassNotFoundException exception) {
+			exception.printStackTrace();
+		}
       String url = this.url;
       String user = this.user;
       String password = this.password;
@@ -23,7 +30,6 @@ public class MyHrDAO {
       } catch (SQLException e) {
          e.printStackTrace();
       }
-
    }
 
    public void selectEmployee(int empid) {
